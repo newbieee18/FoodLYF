@@ -263,7 +263,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 
   if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
-    $announcement = $_POST['announcement'];
+    //$announcement = $_POST['announcement'];
 
     $sql = mysqli_query($db, "DELETE FROM announcements WHERE id='$id'");
 
